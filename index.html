@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <!--    Спасибо большое за проверку - учел для себя много полезного-->
+    <!--Надо исправить: normalize.css нужно подключать только в index.css, перед остальными стилями.-->
+    <!--    Исправлено-->
+    <link href="pages/index.css" rel="stylesheet">
+    <title>Научиться учиться</title>
+</head>
+<body>
+<div class="page">
+    <header class="header">
+        <div class="logo logo_place_header">
+            <!--Надо исправить: Неверное название класса модификатора, нужно свериться с брифом и [соглашением по именованию](https://ru.bem.info/methodology/naming-convention/)-->
+            <!--    Исправлено-->
+        </div>
+        <h1 class="header__title">Научиться учиться</h1>
+        <p class="header__subtitle">Какие современные и эффективные подходы к обучению вы можете использовать в своей
+            жизни?
+            <a class="header__link" href="#">Узнать →</a>
+            <!--Надо исправить: Стили не применились, проверьте путь к файлу3-->
+        </p>
+        <div class="header__main-illustration">
+        </div>
+        <div class="header__square-pic rotation"></div>
+        <!--Надо исправить: По заданию, здесь должен быть микс с блоком, в котором описана анимация-->
+        <!--    Исправлено-->
+    </header>
+    <main class="content">
+        <section class="description">
+            <div class="two-columns">
+                <h2 class="two-columns__brief">
+                    Главные проблемы в обучении
+                </h2>
+                <div class="two-columns__main-text">
+                    <p class="two-columns__paragraph">
+                        Ни в школе, ни в институте нас не учат тому, как правильно изучать материал. Мы готовимся к экзаменам и учим билеты. Мы тренируемся решать однообразные задачи, чтобы лучше сдать тест, но часто в итоге это не дает нам
+                        реального знания. Зубрежка быстро выветривается и не приносит пользы.
+                    </p>
+                    <p class="two-columns__paragraph"><span class="two-columns__span-accent">Вывод:</span> учиться тоже нужно уметь, но почему-то этому мало где учат. Что с этим делать?</p>
+                    <p class="two-columns__paragraph">Конкретные техники и упражнения помогают изменить подход к обучению, сделать его эффективным и захватывающим. Эти же техники применяются на примере обучения в Практикуме.</p>
+                </div>
+            </div>
+        </section>
+        <section class="techniques">
+            <h2 class="section-title">Техники обучения</h2>
+            <p class="section-subtitle">Пять практик от Барбары Оакли</p>
+            <div class="cards">
+                <!--Можно лучше: Для улучшения семантики перечисляемые блоки нужно выделить в список `ul`.
+        Обратите внимание, что у списков следует убрать стандартные стили: `margin`, `padding`, `list-style-type`-->
+                <div class="cards__item">
+                    <img alt="Книга в руках" class="cards__image" src="images/cards-attention.png">
+                    <h3 class="cards__title">Два вида внимания</h3>
+                    <!--Надо исправить: Уровень заголовка не соответствует структуре страницы.-->
+                    <!--    Исправлено-->
+                    <p class="cards__description">Глубокие знания возникают, если чередовать сфокусированное и
+                        рассеянное
+                        мышление.</p>
+                </div>
+                <div class="cards__item">
+                    <img alt="Recall" class="cards__image" src="images/cards-recall.png">
+                    <h3 class="cards__title">Recall</h3>
+                    <p class="cards__description">Вспоминайте изученное — это позволит соединить разрозненные порции
+                        памяти.</p>
+                </div>
+                <div class="cards__item">
+                    <img alt="Интерливинг" class="cards__image" src="images/cards-interliving.png">
+                    <h3 class="cards__title">Интерливинг</h3>
+                    <p class="cards__description">Изучайте несколько навыков одновременно, они обогащают друг друга.</p>
+                </div>
+                <div class="cards__item">
+                    <img alt="Вопросы" class="cards__image" src="images/cards-question.png">
+                    <h3 class="cards__title">Вопросы</h3>
+                    <p class="cards__description">Слушая преподавателя, придумывайте хороший вопрос, который вас
+                        действительно
+                        волнует.</p>
+                </div>
+                <div class="cards__item">
+                    <img alt="Иллюзия компетентности" class="cards__image" src="images/cards-competence.png">
+                    <h3 class="cards__title">Иллюзия компетентности</h3>
+                    <p class="cards__description">Повторите про себя, запишите, расскажите другу: вам только кажется,
+                        что вы
+                        владеете новой темой.</p>
+                </div>
+            </div>
+
+        </section>
+        <section class="video">
+            <h2 class="section-title">Видео нa TED</h2>
+            <p class="section-subtitle">Для тех, кто любит прокрастинировать</p>
+            <div class="video__iframes">
+                <iframe allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen=""
+                        class="video__iframe"
+                        src="https://www.youtube.com/embed/J_89IMS5gJQ"></iframe>
+                <!--Надо исправить: Рамку у iframe необходимо убрать с помощью css. А атрибут ```frameborder``` из разметки нужно удалить, т.к. в HTML5 этот атрибут не поддерживается.-->
+                <!--    Исправлено-->
+                <iframe allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen=""
+                        class="video__iframe"
+                        src="https://www.youtube.com/embed/0u3bccaRmmg"></iframe>
+            </div>
+        </section>
+        <section class="oakley">
+            <div class="two-columns">
+                <h2 class="two-columns__brief">
+                    История Барбары Оакли.
+                </h2>
+                <div class="two-columns__main-text">
+                    <p class="two-columns__paragraph">С детства Барбаре не давалась математика. Она считала себя
+                        законченным
+                        гуманитарием,
+                        причём далеко не самым умным. В армии она изучала русский язык, чтобы получить надбавку, да так
+                        успешно,
+                        что её выдвинули в командиры. Но для продвижения по службе нужно было сдавать математику.
+                        И тогда Барбара придумала свой подход к точным наукам. Оказалось, если вам что-то «плохо
+                        даётся»,
+                        ваши добытые трудом знания гораздо глубже, чем у тех, кому всё ясно с первого взгляда.</p>
+                </div>
+            </div>
+        </section>
+        <section class="feynman">
+            <h2 class="feynman__title">Метод Фейнмана</h2>
+            <p class="feynman__subtitle">Выучить и не забыть.</p>
+            <a class="feynman__link" href="#">Подробнее →</a>
+            <!--Надо исправить: у ссылки неверный цвет, сверьтесь, пожалуйста, с брифом-->
+            <!--    Исправлено-->
+        </section>
+        <section class="digits">
+            <h2 class="section-title">Цифры и факты</h2>
+            <p class="section-subtitle">Про учёбу и мозг</p>
+            <div class="table">
+                <div class="table__cell">
+                    <h3 class="table__heading">86 миллиардов</h3>
+                    <p class="table__text">Число нейронов в мозге человека</p>
+                </div>
+                <div class="table__cell">
+                    <h3 class="table__heading">2.1 миллиарда</h3>
+                    <p class="table__text">Число нуждающихся в повышении квалификации</p>
+                    <p class="table__text">Всемирный Банк, 2017</p>
+                </div>
+                <div class="table__cell">
+                    <h3 class="table__heading">1000 терабайт</h3>
+                    <p class="table__text">Объём памяти человека</p>
+                </div>
+                <div class="table__cell">
+                    <h3 class="table__heading">500 триллионов</h3>
+                    <p class="table__text">Число ответственных за обучение нервных синапсов у взрослого человека</p>
+                </div>
+                <div class="table__cell">
+                    <h3 class="table__heading">420 миллионов</h3>
+                    <p class="table__text">Число взрослых людей моложе 25 лет, не имеющих образования для
+                        трудоустройства</p>
+                    <p class="table__text">Всемирный Банк, 2017</p>
+                </div>
+                <div class="table__cell">
+                    <h3 class="table__heading">17–20 лет</h3>
+                    <p class="table__text">Пик обучаемости</p>
+                </div>
+                <div class="table__cell">
+                    <h3 class="table__heading">1885 год</h3>
+                    <p class="table__text">Открытие кривой забывания</p>
+                </div>
+                <div class="table__cell">
+                    <h3 class="table__heading">1889 год</h3>
+                    <p class="table__text">Открытие условного рефлекса</p>
+                </div>
+            </div>
+        </section>
+        <section class="khan">
+            <div class="khan__container">
+                <p class="khan__author">Салман Хан</p>
+                <h2 class="khan__title">Весь мир — школа</h2>
+                <p class="khan__quote">Страсть и новаторство Сала Хана меняют процесс обучения миллионов студентов по
+                    всему
+                    миру.
+                    Книгу «Весь мир — школа» нужно прочитать всем, кто занимается образованием — так учащиеся повсюду
+                    смогут
+                    получить навыки и знания,
+                    которые приносят успех в школе, карьере и жизни.
+                </p>
+                <!--Надо исправить: <div> для текста - не лучшее решение. Необходимо заменить на подходящий семантичный тег.-->
+                <!--Можно лучше: Здесь подойдет тег <blockquote>, предназначенный специально для цитат.
+        https://developer.mozilla.org/ru/docs/Web/HTML/Element/blockquote
+
+        Нужно иметь в виду, что у него есть стандартные браузерные стили, которые нужно сбросить для соответствия дизайну.
+
+        Список стандартных стилей для различных тегов: https://www.w3schools.com/cssref/css_default_values.asp
+
+        Но можно использовать и обычный8 <p>
+        -->
+                <!--    Исправлено-->
+                <p class="khan__quote-author">Джордж Лукас</p>
+                <p class="khan__quote-author-subline">Кинорежиссер, продюсер</p>
+                <div class="khan__book-container">
+                    <img alt="Весь мир - школа" class="khan__book-pic" src="./images/khan-book.jpg">
+                    <!--Надо исправить: Это важное изображение, оно должно быть контентным. Различие состоит в том, что картинки несущие смысловую нагрузку
+                      или же каким-либо образом относящиеся к содержанию страницы следует вставлять тегом img (картинки в тексте, баннеры, картинки слайдера, аватарки и тд).
+                      Все остальное (просто элементы оформления: различного рода разделители, маркеры, фоны и тд.) следует вставлять в дизайн используя background-image.-->
+                    <!--    Исправлено-->
+                    <a class="khan__buy-link" href="#">Купить книгу →</a>
+                </div>
+            </div>
+        </section>
+        <section class="kaufman">
+            <h2 class="section-title section-title_theme_dark">Принципы обучения</h2>
+            <p class="section-subtitle section-subtitle_theme_dark">от Джоша Кауфмана</p>
+            <div class="table table_theme_dark">
+                <div class="table__cell table__cell_theme_dark">
+                    <h3 class="table__heading table__heading_theme_dark">1</h3>
+                    <p class="table__text table__text_theme_dark">Выберите привлекательный проект.</p>
+                </div>
+                <div class="table__cell table__cell_theme_dark">
+                    <h3 class="table__heading table__heading_theme_dark">2</h3>
+                    <p class="table__text table__text_theme_dark">Сосредоточьтесь на каком-то одном навыке.</p>
+                </div>
+                <div class="table__cell table__cell_theme_dark">
+                    <h3 class="table__heading table__heading_theme_dark">3</h3>
+                    <p class="table__text table__text_theme_dark">Определите целевой уровень мастерства.</p>
+                </div>
+                <div class="table__cell table__cell_theme_dark">
+                    <h3 class="table__heading table__heading_theme_dark">4</h3>
+                    <p class="table__text table__text_theme_dark">Разбейте навык на элементы.</p>
+                </div>
+                <div class="table__cell table__cell_theme_dark">
+                    <h3 class="table__heading table__heading_theme_dark">5</h3>
+                    <p class="table__text table__text_theme_dark">Приготовьте всё необходимое для занятий.</p>
+                </div>
+                <div class="table__cell table__cell_theme_dark">
+                    <h3 class="table__heading table__heading_theme_dark">6</h3>
+                    <p class="table__text table__text_theme_dark">Устраните препятствия для занятий.</p>
+                </div>
+                <div class="table__cell table__cell_theme_dark">
+                    <h3 class="table__heading table__heading_theme_dark">7</h3>
+                    <p class="table__text table__text_theme_dark">Выделите специальное время для занятий.</p>
+                </div>
+                <div class="table__cell table__cell_theme_dark">
+                    <h3 class="table__heading table__heading_theme_dark">8</h3>
+                    <p class="table__text table__text_theme_dark">Создайте быстрые петли обратной связи.</p>
+                </div>
+                <div class="table__cell table__cell_theme_dark">
+                    <h3 class="table__heading table__heading_theme_dark">9</h3>
+                    <p class="table__text table__text_theme_dark">Занимайтесь по расписанию, короткими интенсивными
+                        интервалами.</p>
+                </div>
+                <div class="table__cell table__cell_theme_dark">
+                    <h3 class="table__heading table__heading_theme_dark">10</h3>
+                    <p class="table__text table__text_theme_dark">Уделяйте внимание количеству и скорости.</p>
+                </div>
+            </div>
+            <div class="kaufman__triangle rotation"></div>
+            <!--Надо исправить: По заданию, здесь должен быть микс с блоком, в котором описана анимация-->
+            <!--    Исправлено-->
+        </section>
+        <section class="resources">
+            <h2 class="section-title">Полезные ресурсы</h2>
+            <p class="section-subtitle">Больше материалов о техниках и лайфхаках обучения</p>
+            <ul class="resources__logo-zone">
+                <!--Отлично: Использован тег <ul>, подходящий по семантике.-->
+                <li><a href="#" lang="ru"><img alt="Арзамас" class="resources__logo"
+                                               src="./images/logo/resources-arzamas.svg"></a></li>
+                <!--Отлично: Лого сделаны кликабельными ссылками-->
+                <li><a href="#" lang="ru"><img alt="Н+1" class="resources__logo"
+                                               src="./images/logo/resources-n1.svg"></a></li>
+                <!--Можно лучше: язык указан после doctype, можно не указывать здесь-->
+                <li><a href="#" lang="ru"><img alt="Стрелка" class="resources__logo"
+                                               src="./images/logo/resources-strelka.svg"></a></li>
+                <li><a href="#" lang="ru"><img alt="Полка" class="resources__logo"
+                                               src="./images/logo/resources-polka.svg"></a></li>
+            </ul>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer__columns">
+            <div class="footer__column footer__column_content_copyright">
+                <div class="logo logo_place_footer"></div>
+                <!--Надо исправить: Неверное название класса модификатора, нужно свериться с брифом и [соглашением по именованию](https://ru.bem.info/methodology/naming-convention/)-->
+                <!--    Исправлено-->
+                <p class="footer__author">&copy; 2021 Александр Лебедев</p>
+            </div>
+            <nav class="footer__column footer__column_content_info">
+                <h2 class="footer__column-heading">О Практикуме</h2>
+                <ul class="footer__column-links">
+                    <li><a class="footer__column-link" href="#" lang="ru">Главная</a></li>
+                    <li><a class="footer__column-link" href="#" lang="ru">Концепция</a></li>
+                    <li><a class="footer__column-link" href="#" lang="ru">Наставники</a></li>
+                </ul>
+            </nav>
+            <nav class="footer__column footer__column_content_social">
+                <h2 class="footer__column-heading">Соцсети</h2>
+                <ul class="footer__column-links">
+                    <li class="footer__column-link"><a class="footer__list-item" href="#" lang="ru"><img
+                            alt="Facebook" class="footer__social-icon" src="./images/facebook_white.svg">Facebook</a></li>
+                    <li class="footer__column-link"><a class="footer__list-item" href="#" lang="ru"><img
+                            alt="ВКонтакте" class="footer__social-icon" src="./images/vk_white.svg">ВКонтакте</a></li>
+                    <li class="footer__column-link"><a class="footer__list-item" href="#" lang="ru"><img
+                            alt="Instagram" class="footer__social-icon" src="./images/instagram_white.svg">Instagram</a></li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+</div>
+</body>
+</html>
+
+<!-- РЕЗЮМЕ
+  
+Здравствуйте, Александр!
+
+Работа в целом получилась хорошая, однако, некоторая доработка все же потребуется.
+
+Что понравилось:
+
+- Выбраны семантичные теги
+- Правильное использование flexbox
+- Хорошо написаны стили, используются псевдо-классы
+- Есть эффект наведения для ссылок
+- Страница визуально очень сходится с брифом.
+- В целом, хорошо справились с БЭМ-подходом и файловой структурой
+
+Надо исправить:
+
+- Все комментарии "Надо исправить" в коде.-Исправлено
+- Нужно исправить все ошибки (error) валидации: https://validator.w3.org/nu/#textarea-Исправлено
+- Анимацию нужно реализовать в отдельном блоке, и примиксовать к квадрату и треугольнику. Больше про миксы [здесь](https://ru.bem.info/methodology/quick-start/#%D0%BC%D0%B8%D0%BA%D1%81)
+- Есть нарушения форматирования кода в html и css файлах - где-то нарушено выравнивание, где-то не хватает пробелов, где-то наоборот лишние пробелы и строки. Нужно отформатировать код, он должен быть оформлен одинаково во всех стилевых файлах, в css довольно много нарушений, рекомендую форматировать все файлы. Если вы используете VS Code, вы можете форматировать код автоматически: https://codengineering.ru/q/how-do-you-format-code-in-visual-studio-code-vscode-27090.  Также можно пользоваться онлайн-сервисами для форматирования кода: https://webformatter.com/html Рекомендации по оформлению кода: https://habr.com/ru/post/143452/-Исправлено
+- Все импорты нужно делать в index.css, не в блок. Импортировать элементы и модификаторы в файл страницы нужно для того, чтобы если на сайте несколько страниц, то в каждую страницу импортировались только нужные элементы и модификаторы, а не все, которые есть у блока. Кроме того, этот подход позволяет избежать проблем при импортах модификаторов, чтобы их стили не перетирались стилями модифицируемого блока.-Исправлено
+- Для элемента `cards__item`: Прекрасно, что используете псевдо-класс для обнуления правого отступа! Однако, сейчас это правило обнулит отступ только для третьей карточки, что даст необходимый результат в случае с 5 карточками в секции. А вот если мы захотим добавить ещё карточек, разметка уже сломается. Нужно сделать это правило более универсальным, чтобы отступ обнулялся для _каждой третьей_ карточки.-Исправлено
+- У секции feynman фиксирована высота. Лучше не фиксировать высоту для секций, контент в которых может поменяться. Лучше заменить на min-height в этом случае.-Исправлено
+- Некоторые вертикальные отступы на странице не соответствуют дизайну из-за стандартных отступов, которые отображает браузер для html-элементов (например, в header и two-columns). **Для всех заголовков и параграфов** (например, в header, two-columns, table, footer) нужно сбросить стандартные браузерные отступы, и задать значения из брифа, если они указаны. У многих элементов (например, h1-h6, ul, p) есть дефолтные браузерные стили. Чаще всего, их нужно сбрасывать, чтобы они не искажали желаемые отступы. В вашей работе не должно быть отступов, унаследованных от браузера. Обратите внимание, что стили эти нужно сбросить в соответствующих классах, **не используя** селекторы тегов.
+Список тегов и их стилей: https://www.w3schools.com/cssref/css_default_values.asp-Исправлено
+- Некорректное название папки элемента: https://prnt.sc/132y4f7-Исправлено
+- Модификаторы ключ-значение неверно расположены в файловой структуре. По БЭМ модификаторы с одним ключом (`_key_value`) должны лежать в одной папке с именем `_key`. Нужно исправить для всех модификаторов в проекте.-Исправлено
+- Элемент `header__link` неверно расположен в файловой структуре, не нужно вкладывать его в папку `__subtitle`-Исправлено
+- Секции oakley не нужен отрицательный z-index. При использовании отрицательного z-index на блоке становится невозможным взаимодействие с его содержимым. Если мы захотим добавить внутрь блока ссылку - по ней нельзя будет кликнуть. Отрицательные значения можно использовать для картинок, если они не должны быть кликабельными.
+- Тип засечек в свойстве font-family не нужно брать в кавычки.-Исправлено
+- У текста в `two-columns` должна быть минимальная ширина, а не максимальная.-Исправлено
+- При сужении окна просмотра заголовок и подзаголовок заезжает под картинку в header. Необходимо поправить z-index в этой секции.-Исправлено
+- В проекте есть случаи, где в зависимости от порядка элементов, у них должны быть разные отступы. Например, параграфы в two-columns: у последнего параграфа не должно быть последнего отступа, у первого - не должно быть верхнего. Для решения таких задач используют [структурные псевдо-классы](https://webref.ru/layout/structural-pseudo-classes).-Исправлено
+- Секция video должна частично "наползать" на oakley. Пожалуйста, сверьтесь с брифом и исправьте. **Рекомендация**: для этого можно использовать отрицательный margin, релативное позиционирование со смещением вниз или transform: translate(). Нужно внимательно проверить, чтобы вертикальные отступы между элементами соответствовали брифу.-Исправлено
+- Вертикальный отступ снизу от секции digits не соответствует брифу.-Исправлено
+- Внутренний верхний отступ в секции khan не соответствует брифу.-Исправлено
+- Нижний отступ у kaufman не соответствует брифу.-Исправлено
+- Нужно убрать padding у списка в resources.-Исправлено
+- Для заголовков в footer не применяются стили.-Исправлено
+- В футере неверная раскладка: первая колонка должна быть шире остальных, для этого в макете ей задано значение flex-basis -Исправлено
+
+Можно лучше:
+
+- Раcсмотрите возможность сделать коллекции похожих элементов через список <ul>. В этой работе прекрасными кейсами для <ul> являются секции cards, table, video, resources. Разметка подобных перечисляемых сущностей с помощью списка - важный инструмент доступности, он предоставляет дополнительные навигационные опции для пользователей скринридеров
+- Если задавать transition для основного правила, а не для hover, переход будет работать в обоих направлениях: и при наведении курсора, и при его снятии. Сейчас при снятии курсора прозрачность меняется без перехода.
+- Сейчас ссылка в секции khan занимает все высоту контейнера, в этом можно убедиться, если навести курсор мыши ниже текста ссылки. Нужно прижать ссылку к верху с помощью флекс-свойств.
+- Использование z-index и контекст наложения. Когда нужно, чтобы элемент находился под другими элементами блока, можно воспользоваться таким подходом (на примере блока kaufman): задайте треугольнику z-index: -1, а блоку `kaufman` — z-index: 1, чтобы создать контекст наложения. После этого все остальные z-index можно убрать из этой секции (для модификаторов таблицы и заголовков, потому что по сути это свойство именно треугольника - быть под остальным контентом). В header можно сделать так же. [Больше про контекст наложения](https://medium.com/nuances-of-programming/%D0%BE%D0%B1%D1%8A%D1%8F%D1%81%D0%BD%D1%8F%D0%B5%D0%BC-z-index-%D0%BA%D0%B0%D0%BA-%D0%BF%D0%BE%D0%B7%D0%B8%D1%86%D0%B8%D0%BE%D0%BD%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D1%82%D1%8C-%D1%8D%D0%BB%D0%B5%D0%BC%D0%B5%D0%BD%D1%82%D1%8B-%D1%81-%D0%BF%D0%BE%D0%BC%D0%BE%D1%89%D1%8C%D1%8E-css-e80bc85cf36c)
+
+Комментарии "можно лучше" носят рекомендательный характер, их выполнение остается на Ваше усмотрение.
+Комментарии "надо исправить" являются обязательными, при выполнении всех "надо исправить" работа будет зачтена.
+
+Удачи!
+Спасибо большое!!!
+-->
